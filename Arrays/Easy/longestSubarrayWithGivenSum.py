@@ -47,3 +47,4 @@ nums2 = [-1,0,1,1,0,-1,2]
 k = 0
 print(longestSubarrayWithSumKPositives(nums,k))
 print(longestSubarrayWithSumK(nums2,k))
+print(subarraysWithSumK(nums2,k))

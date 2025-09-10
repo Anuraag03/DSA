@@ -7,10 +7,14 @@ def quickSort(nums,low,high): #TC= O(NlogN) or O(N^2) if bad pivot is picked and
 
 def partition(nums,low,high):
     pivot = nums[high]
-    i = low-1
+    i = low
     for j in range(low,high):
         if nums[j]<pivot:
-            i+=1
             nums[i],nums[j] = nums[j],nums[i]
-    nums[i+1],nums[high] = nums[high],nums[i+1]
-    return i+1
+            i+=1
+    nums[i],nums[high] = nums[high],nums[i]
+    return i
+
+nums = [5,2,1,3,4,6]
+quickSort(nums,0,len(nums)-1)
+print(nums)  
