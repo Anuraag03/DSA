@@ -4,6 +4,7 @@ that no two elements of the subsequence are adjacent elements in the array.
 Note: A subsequence of an array is a list with elements of the array where some elements 
 are deleted ( or not deleted at all) and the elements should be in the same order in the subsequence as in the array.
 '''
+# Can solve House Robber problem with the below algo
 def maxSumOfNonAdjacentM(n,nums):
     dp = [-1]*(n)
     def rec(num):
