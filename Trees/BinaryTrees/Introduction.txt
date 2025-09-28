@@ -1,0 +1,20 @@
+Binary Trees
+
+trees with 0 1 or two children at each node
+
+Full Binary Tree:
+    A Full Binary Tree, also known as a Strict Binary Tree, adheres to the structural property where every node has either zero or two children.
+    No node of this tree has just a single child, all internal nodes have exactly two children or in the case of leaf nodes, no children.
+
+Complete Binary Tree:
+    A Complete Binary Tree is a specialised form of Binary Tree where all levels are filled completely except possibly the last level, which is filled from left to right.
+    All levels of the tree, except possibly the last one, are fully filled. If the last level is not completely filled, it is filled from left to right, ensuring that nodes are positioned as far left as possible.
+
+Perfect Binary Tree:
+    A Perfect Binary tree is a type of Binary Tree where all leaf nodes are at the same level and the number of leaf nodes is maximised for that level.
+    Every node in a perfect binary tree has either zero or two children. This means that every internal node (non-leaf node) has exactly two children and all leaf nodes are at the same level.
+    All levels of this tree are fully filled with nodes including the last level. Perfect Binary Trees have a balanced structure that maximises the number of nodes for a given height, creating a dense structure where the number of nodes doubles as we move down each level of the tree.
+
+Balanced Binary Tree:
+    A Balanced Binary tree is a type of Binary Tree where the heights of the two subtrees of any node differ by at most one. This property ensures that the tree remains relatively well-balanced, preventing the tree from becoming highly skewed or degenerate.
+
