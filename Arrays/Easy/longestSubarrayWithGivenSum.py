@@ -33,8 +33,9 @@ def subarraysWithSumK(nums,k):
     res = []
     for i in range(len(nums)):
         currSum+=nums[i]
-        for j in prefixSum[currSum-k]:
-            res.append(nums[j+1:i+1])
+        if currSum-k in prefixSum:
+            for j in prefixSum[currSum-k]:
+                res.append(nums[j+1:i+1])
         if currSum in prefixSum:
             prefixSum[currSum].append(i)
         else:
