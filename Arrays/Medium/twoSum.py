@@ -39,7 +39,20 @@ def twoSumValues_set(nums, k): #TC = O(N) and SC = O(N)
     
     return list(res)
 
+def twoSumIndexes(nums,k): #TC = O(N) and SC = O(N)
+    seen = {}
+    res = set()
+    for i in range(len(nums)):
+        target = k-nums[i]
+        if target in seen:
+            res.add((seen[target],i))
+        seen[nums[i]] = i
+    return res
+
+
 arr = [2, 6, 5, 8, 11]
 target = 14
 print(twoSumValues_set(arr,target))
+print(twoSumIndexes(arr,target))
 print(twoSumValues(arr,target))
+
